@@ -18,6 +18,7 @@ int _printf(const char *format, ...);
 ssize_t write(int fd, const void *buf, size_t count);
 int flags(const char *format, ...);
 int width(const char *format, int *pos, va_list args);
+int length(const char *format);
 int precision(const char *format, int start_pos, va_list args);
 
 /*function helpers*/
