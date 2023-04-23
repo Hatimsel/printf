@@ -18,7 +18,6 @@
 
 /*int binary(const char *format, ...);*/
 int _printf(const char *format, ...);
-<<<<<<< HEAD
 void print_char(va_list args, int *count);
 void print_string(va_list args, int *count);
 void print_int(va_list args, int *count);
@@ -29,7 +28,6 @@ void print_uphexa(va_list args, int *count);
 void print_lhexa(va_list args, int *count);
 void print_specialS(va_list args, int *count);
 void print_pointer(va_list args, int *count);
-=======
 ssize_t write(int fd, const void *buf, size_t count);
 int flags(const char *format, ...);
 int width(const char *format, int *pos, va_list args);
@@ -42,7 +40,4 @@ int is_alpha(int c);
 int is_digit(char);
 
 #define length_SHORT 1
-#define length_LONG 2
->>>>>>> 271101320c6374e8083f40cb460ea9ee4c282fda
-
 #endif /* MAIN_H */
