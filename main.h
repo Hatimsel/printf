@@ -1,33 +1,56 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
+
+
+#include "main.h"
+#include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <stdarg.h>
 
-#define BUFFER_SIZE 1024
 
-#define _MINUS 1
-#define _PLUS 2
-#define _ZERO 4
-#define _HASH 8
-#define _SPACE 16
+int _strlen(const char *);
+int print(char *);
+char *itoa(long int, int);
+int _putchar(char);
+int buffer(char);
+int is_lowercase(char);
+char *string_to_upper(char *);
+int _strcmp(char *, char *);
+int rot13(char *s);
 
-/*function prototypes*/
 
-/*int binary(const char *format, ...);*/
-int _printf(const char *format, ...);
-ssize_t write(int fd, const void *buf, size_t count);
-int flags(const char *format, ...);
-int width(const char *format, int *pos, va_list args);
-int length(const char *format);
-int precision(const char *format, int start_pos, va_list args);
+int _printf(const char *, ...);
 
-/*function helpers*/
 
-int is_alpha(int c);
-int is_digit(char);
+int handler(const char *, va_list);
+int percent_handler(const char *, va_list, int *);
 
-#define length_SHORT 1
-#define length_LONG 2
 
+int _string(va_list);
+int _char(va_list);
+int _integer(va_list);
+int _binary(va_list);
+int _rot(va_list);
+int _unsigned(va_list);
+int _octal(va_list);
+int _hexadecimal_low(va_list);
+int _hexadecimal_up(va_list);
+int _pointer(va_list);
+int _rev_string(va_list);
+
+
+/**
+ * struct _format - Typedef struct
+ *
+ * @type: Format
+ * @f: The function associated
+ */
+
+typedef struct _format
+{
+	char type;
+	int (*f)(va_list);
+} format;
 
 #endif
