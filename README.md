@@ -1,4 +1,4 @@
-🎉 [Hatim](https://github.com/Hatimsel). and [I](https://github.com/RyuzakiiL23). recently completed a custom printf function for the C programming language that we called \_printf! 🚀
+🎉 We [Hatim](https://github.com/Hatimsel). and [Omar](https://github.com/RyuzakiiL23). recently completed a custom printf function for the C programming language that we called \_printf! 🚀
 
 ## Overview 📝
 
